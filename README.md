@@ -2,7 +2,7 @@
 Basic Facebook bot to validate a number multiple of 3 or 5 and respond Fizz, Buzz or FizzBuzz according to the value.
 
 ### Dtabase
-The bot save the facebookid of the sender and all the messages
+The bot save the facebookid of the sender and all VALID* messages
 
 ### Deploy
 The bot was deployed on Heroku and you can see it here: https://cloudia-leonardo.herokuapp.com/
