@@ -12,3 +12,17 @@ To try the boot you can access it's facebook page: https://www.facebook.com/Chat
 
 ### Behavior
 The bot acceps mensage with a maximum of 280 characters, validate if is a number and responde with fiz and buzz. If e message it's not valid, the the same message will be respod.
+
+### Local Usage
+To run the application locally, you can create an temporary database with the command:
+```
+# make database
+```
+and run the app:
+```
+# python app.py
+```
+
+### Requests
+To try requests to the bot you the requests examples in the collection attached.
+I recomend to use Postman.

@@ -99,7 +99,7 @@ def receive_message():
 
 def verify_fb_token(token_sent):
     if token_sent == VERIFY_TOKEN:
-        return request.args.get("hub.challenge")
+        return request.args.get("hub.challenge", "ok")
     return 'Token de verificação inválido.'
 
 
@@ -110,4 +110,5 @@ def send_message(recipient_id, response):
 
 # Add description here about this if statement.
 if __name__ == "__main__":
+    db.create_all()
     app.run()
