@@ -14,6 +14,16 @@ To try the boot you can access it's facebook page: https://www.facebook.com/Chat
 The bot acceps mensage with a maximum of 280 characters, validate if is a number and responde with fiz and buzz. If e message it's not valid, the the same message will be respod.
 
 ### Local Usage
+To run the application locally, you need to create an .env file like this:
+```
+#ACCESS_TOKEN=
+#VERIFY_TOKEN=
+#
+#DB_HOST=localhost
+#DB_NAME=fb-message
+#DB_PASSWORD=123
+#DB_USER=postgres
+```
 To run the application locally, you can create an temporary database with the command:
 ```
 # make database
