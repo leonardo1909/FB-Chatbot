@@ -66,7 +66,7 @@ def receive_message():
                             user = User.query.filter_by(
                                 facebook_id=recipient_id
                             )
-                            if not user:
+                            if not user.first():
                                 user = User(
                                     facebook_id=recipient_id
                                 )
@@ -90,12 +90,11 @@ def receive_message():
                                 message=message_text,
                                 response=response
                             )
-                            # message.user.append(user)
                             db.session.add(message)
                             db.session.commit()
 
                             send_message(recipient_id, response)
-    return "response done"
+        return "done"
 
 
 def verify_fb_token(token_sent):
@@ -106,7 +105,7 @@ def verify_fb_token(token_sent):
 
 def send_message(recipient_id, response):
     bot.send_text_message(recipient_id, response)
-    return
+    return "done"
 
 
 # Add description here about this if statement.
